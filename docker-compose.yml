@@ -1,0 +1,10 @@
+version: "2.1"
+services:
+  nginx:
+    image: nginx:alpine
+    tty: true
+    stdin_open: true
+    volumes: 
+      - .:/usr/share/nginx/html
+    ports:
+      - 8080:80
